@@ -14,8 +14,9 @@ public class Member {
     public Member() {
     }
 
-    public Member(Long id, int age) {
-        this.id = id;
+    public Member(String username, int age) {
+        this.username = username;
         this.age = age;
     }
+
 }
