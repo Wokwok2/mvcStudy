@@ -11,9 +11,6 @@ public class Member {
     private String username;
     private int age;
 
-    public static Member getInstance() {
-        return new Member();
-    }
     public Member() {
     }
 
