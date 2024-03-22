@@ -12,4 +12,4 @@
 </ul>
 <a href="/index.html">메인</a>
 </body>
-</html> 
+</html>
