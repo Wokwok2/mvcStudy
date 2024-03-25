@@ -9,7 +9,7 @@
 <a href="/index.html">메인</a>
 <table>
     <thead>
-</thead>
+    </thead>
 <tbody>
 
 <c:forEach var="item" items="${members}">
