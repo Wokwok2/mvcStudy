@@ -29,14 +29,14 @@ public class FrontControllerServletV3 extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String requestURI = request.getRequestURI();
-
         ControllerV3 controller = controllerv3Map.get(requestURI);
+
         if (controller == null) {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             return;
         }
 
-        // paramMap
+        // 요청에 들어있는 parameter 들을 까내 paramMap 에 세팅
         Map<String, String> paramMap = createParamMap(request);
         ModelView mv = controller.process(paramMap);
         String viewName = mv.getViewName();// 논리 이름 : new-form
